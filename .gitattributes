@@ -1,0 +1,35 @@
+# Set the default behavior for text files
+* text=auto
+
+# Specify files that should always be treated as binary
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.zip binary
+*.apk binary
+*.aar binary
+
+# Specify files that should always be treated as text
+*.java text
+*.xml text
+*.gradle text
+*.properties text
+*.md text
+
+# Ignore Android-specific files and directories
+.gradle/ linguist-vendored
+.idea/ linguist-vendored
+build/ linguist-vendored
+app/build/ linguist-vendored
+
+# Ignore generated files
+*.iml linguist-vendored
+
+# Ignore temporary files
+*.swp linguist-vendored
+*.log linguist-vendored
+
+# Specify merge strategies for specific files
+# For example, use "union" strategy for .xml files
+*.xml merge=union
